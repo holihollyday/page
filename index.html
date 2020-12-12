@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="new media artist, creative technologist">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/icon.png">
+<title>Jiaqi Zhang | Artist, Creative Technologist</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+<!-- <script language="javascript" type="text/javascript" src="projects/addons/p5.js"></script>
+<script language="javascript" src="projects/addons/p5.dom.js"></script> -->
+</head>
+
+<body onload="myFunction()">
+<div id="loader"><p style="text-align:center;">.stare.</p></div>
+<!-- Header Section -->
+<section class="tophead" role="tophead">
+  <!-- Navigation Section -->
+  <header id="header" style="background-color:transparent;">
+    <div class="header-content ">
+      <a class="logo" href="index.html">Jiaqi Zhang</a>
+      <br><br>
+      <a class="subLogo"> Artist, Creative Technologist</a>
+      <br>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+            <li><a href="creative.html">creative</a></li>
+            <li><a href="curatorial.html" >curatorial</a></li>
+						<li><a href="about.html">about</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+  <!-- Navigation Section -->
+</section>
+
+   <script>
+   var myVar;
+
+   function myFunction() {
+     myVar = setTimeout(showPage, 1000);
+   }
+
+   function showPage() {
+     document.getElementById("loader").style.display = "none";
+     document.getElementById("myDiv").style.display = "block";
+   }
+   </script>
+<!-- Header Section -->
+
+
+<!-- portfolio grid section -->
+<!-- <div id="canvas_body_div">
+<canvas data-processing-sources="poster.pde"></canvas>
+</div> -->
+
+
+<!-- JS FILES -->
+<!-- <script>
+
+</script> -->
+<script  style="display:none;" id="myDiv" src="mousedrawing.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

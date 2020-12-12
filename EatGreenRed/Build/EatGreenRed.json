@@ -1,0 +1,12 @@
+{
+"companyName": "Jiaqi Zhang",
+"productName": "1MM",
+"dataUrl": "EatGreenRed.data.unityweb",
+"wasmCodeUrl": "EatGreenRed.wasm.code.unityweb",
+"wasmFrameworkUrl": "EatGreenRed.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
