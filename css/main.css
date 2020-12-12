@@ -119,6 +119,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #F8F9F9;
+  background-color: #f0f7f7;
 }
 
 ul, ol {
@@ -171,7 +172,8 @@ ul li {
   margin-left: 0%;
   margin-right: 0%;
   margin-bottom: 2%;
-  background-color: #FFFFFF;
+  background-color: #f0f7f7;
+  /*background-color: #FFFFFF;*/
 }
 
 #header .header-content {
