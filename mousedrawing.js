@@ -39,18 +39,28 @@ function setup() {
   chineseP.style('z-index', '1');
   chineseP.style('color', '#fff');
 
-  if(windowWidth<800){
-   englishP.style('font-size', '10px');
-   chineseP.style('font-size', '10px');
-   chineseP.position(windowWidth/4, windowHeight/2-120);
-   englishP.position(windowWidth/4, windowHeight/2-80);
+  if(windowWidth<600){
+    chineseP.style('font-size', '45px');
+    chineseP.style('margin','20px');
+    chineseP.position(0,0);
+    englishP.style('font-size', '30px');
+    englishP.style('margin','5px');
+    englishP.position(0,0);
   }
 
+if(windowWidth>600&&windowWidth<800){
+  chineseP.style('font-size', '45px');
+  chineseP.style('margin','50px');
+  chineseP.position(0,0);
+  englishP.style('font-size', '40px');
+  englishP.style('margin','5px');
+  englishP.position(0,0);
+  }
   if(windowWidth>=800){
    chineseP.style('font-size', '55px');
    chineseP.style('margin','200px');
    chineseP.position(0,0);
-   englishP.style('font-size', '60px');
+   englishP.style('font-size', '55px');
    englishP.style('margin','5px');
    englishP.position(0,0);
   }
