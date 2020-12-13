@@ -689,80 +689,9 @@ ul li {
   margin-top: 7%;
 }
 
-/* ------------------------------------------------------------------------------
-	 Arrow
--------------------------------------------------------------------------------*/
-
-div.arrow {
-  margin: 5vmin;
-  width: 6vmin;
-  height: 6vmin;
-  border-width: 1vmin 0 0 1vmin;
-  border-color: #d2d2d2;
-  border-style: solid;
-  position: relative;
-  top: 8vmin;
-  transition: 0.3s ease;
-  transform: rotateZ(135deg);
+#work-detail .about {
+  margin: 120px 250px 10px 250px;
 }
-
-div.arrow.up {
-  transform: rotate(45deg) skew(-5deg, -5deg);
-}
-
-div.arrow.down {
-  transform: rotate(225deg) skew(-5deg, -5deg);
-}
-
-div.arrow.left {
-  transform: rotate(315deg) skew(-5deg, -5deg);
-}
-
-div.arrow.right {
-  transform: rotate(135deg) skew(-5deg, -5deg);
-}
-
-div.arrow::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  border: inherit;
-  display: block;
-  position: fixed;
-  bottom: 1vmin;
-  right: 1vmin;
-}
-
-div.arrow:hover {
-  border-color: #02e8eb;
-}
-
-div.arrow:hover::before {
-  border-color: #02e8eb;
-  animation: 0.4s arrow;
-  animation-fill-mode: forwards;
-}
-
-@keyframes arrow {
-  to {
-    transform: translateX(-6vmin) translateY(-6vmin);
-    opacity: 0;
-  }
-}
-
-/*Pen pagination*/
-
-.arrow {
-  position: fixed;
-  left: 85%;
-  top: calc(85% - 8vmin);
-}
-
-.arrow.down {
-  left: calc(50% - 10vmin);
-}
-
-/*background*/
 
 /* ---- reset ---- */
 
@@ -819,6 +748,12 @@ canvas {
 .fa:hover {
   opacity: 0.5;
 }
+@media only screen and (max-width:320px) {
+  /* For mobile phones: */
+  #work-detail .about {
+    margin: 90px 30px 10px 30px;
+  }
+}
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
@@ -847,6 +782,9 @@ canvas {
     font-size: 14px;
     line-height: 1.5em;
   }
+  p {
+    font-size: 15px;
+  }
   .banner {
     position: relative;
     text-align: center;
@@ -864,10 +802,7 @@ canvas {
     padding-top: 10px;
     width: 50%;
   }
+  #work-detail .about {
+    margin: 90px 50px 10px 50px;
+  }
 }
-
-@media only screen and (max-width:320px) {
-  /* For mobile phones: */
-  .count-particles {
-    width: 100%;
-    height: a

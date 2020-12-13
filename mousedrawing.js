@@ -27,42 +27,60 @@ function setup() {
 
   let englishP = createP(english);
   englishP.style('line-height', '1.2');
-  englishP.style('text-align', 'left');
+  englishP.style('text-align', 'justify');
   englishP.style('z-index', '-1');
   englishP.style('color', c);
   englishP.style('font-weight','0.2');
   englishP.style('text-transform','uppercase');
-
+  englishP.position(0,0);
   let chineseP = createP(chinese);
   chineseP.style('line-height', '1.4');
-  chineseP.style('text-align', 'left');
+  chineseP.style('text-align', 'justify');
   chineseP.style('z-index', '1');
   chineseP.style('color', '#fff');
+  chineseP.position(0,0);
 
-  if(windowWidth<600){
-    chineseP.style('font-size', '45px');
+if(windowWidth<=400){
+    chineseP.style('font-size', '35px');
     chineseP.style('margin','20px');
-    chineseP.position(0,0);
+    englishP.style('font-size', '25px');
+    englishP.style('margin','5px');
+  }
+if(windowWidth>400 && windowWidth<=600){
+    chineseP.style('font-size', '39px');
+    chineseP.style('margin','25px');
     englishP.style('font-size', '30px');
     englishP.style('margin','5px');
-    englishP.position(0,0);
   }
-
 if(windowWidth>600&&windowWidth<800){
-  chineseP.style('font-size', '45px');
-  chineseP.style('margin','50px');
-  chineseP.position(0,0);
-  englishP.style('font-size', '40px');
+  chineseP.style('font-size', '50px');
+  chineseP.style('margin','90px');
+  englishP.style('font-size', '48px');
   englishP.style('margin','5px');
-  englishP.position(0,0);
   }
-  if(windowWidth>=800){
-   chineseP.style('font-size', '55px');
+  if(windowWidth>=800 && windowWidth < 1680){
+   chineseP.style('font-size', '57px');
    chineseP.style('margin','200px');
-   chineseP.position(0,0);
    englishP.style('font-size', '55px');
    englishP.style('margin','5px');
-   englishP.position(0,0);
+  }
+  if(windowWidth>= 1680 && windowWidth<1920){
+   chineseP.style('font-size', '77px');
+   chineseP.style('margin','200px');
+   englishP.style('font-size', '75px');
+   englishP.style('margin','15px');
+  }
+  if(windowWidth>= 1920 && windowWidth<2560){
+   chineseP.style('font-size', '85px');
+   chineseP.style('margin','200px');
+   englishP.style('font-size', '80px');
+   englishP.style('margin','15px');
+  }
+  if(windowWidth>=2560){
+   chineseP.style('font-size', '120px');
+   chineseP.style('margin','200px');
+   englishP.style('font-size', '110px');
+   englishP.style('margin','15px');
   }
 
 }
